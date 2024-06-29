@@ -74,7 +74,7 @@ const Footer = () => {
             <a href="#">Partner with us</a>
           </li>
           <li className="pt-5 sm:pt-8 text-sm sm:text-lg">
-            <a href="#">FAQ's</a>
+            <a href="#">FAQs</a>
           </li>
           <li className="pt-5 sm:pt-8 text-sm sm:text-lg">
             <a href="#">Blog</a>
