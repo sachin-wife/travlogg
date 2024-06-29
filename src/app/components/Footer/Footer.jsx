@@ -11,6 +11,7 @@ const Footer = () => {
             width={40}
             height={40}
             className=" inline-block  pr-2"
+            alt="travel-logo"
           />
           Travelog
         </a>

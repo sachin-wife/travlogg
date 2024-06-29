@@ -59,7 +59,7 @@ const TravelPoint = () => {
           has roots in a piece of classical Latin literature from 45 BC.
         </p>
 
-        <div class="grid grid-cols-2 gap-9 pt-[64px] pb-6">
+        <div className="grid grid-cols-2 gap-9 pt-[64px] pb-6">
           {travelPoint.map((card, idx) => {
             return (
               <div

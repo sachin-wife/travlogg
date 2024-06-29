@@ -2,13 +2,17 @@ import { Nunito_Sans } from "next/font/google";
 
 import Image from "next/image";
 import React from "react";
-const nunito_Sans = Nunito_Sans({ subsets: ["latin"] });
+const nunito_Sans = Nunito_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
+});
 const Banner = () => {
   return (
     <div
       className={
         nunito_Sans.className +
-        " pt-9 flex items-center flex-col-reverse inline-block md:flex md:flex-row justify-between "
+        " pt-9 flex items-center flex-col-reverse md:flex md:flex-row justify-between "
       }
     >
       {/* Banner Image  */}

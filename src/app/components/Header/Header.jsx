@@ -4,7 +4,11 @@ import { Nunito_Sans } from "next/font/google";
 import NavMobile from "./NavMobile";
 import DesktopNav from "./DesktopNav";
 
-const nunito_Sans = Nunito_Sans({ subsets: ["latin"] });
+const nunito_Sans = Nunito_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
+});
 
 const Header = () => {
   return (

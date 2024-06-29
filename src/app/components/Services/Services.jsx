@@ -1,14 +1,18 @@
 "use client";
 import { Nunito_Sans } from "next/font/google";
 import Sliders from "./Slider";
-const nunito_Sans = Nunito_Sans({ subsets: ["latin"] });
+const nunito_Sans = Nunito_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
+});
 
 const Services = () => {
   return (
     <div
       className={
         nunito_Sans.className +
-        " pt-[64px] pt-9 flex items-center flex-col-reverse inline-block md:flex md:flex-row justify-between "
+        " pt-[64px]  flex items-center flex-col-reverse  md:flex md:flex-row justify-between "
       }
     >
       <div className="w-1/2">

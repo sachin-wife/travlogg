@@ -25,6 +25,7 @@ const DesktopNav = () => {
           src="/assets/images/travlog-logo.svg"
           width={40}
           height={40}
+          alt="travlog-logo"
           className=" inline-block  pr-2"
         />
         Travelog
@@ -34,9 +35,9 @@ const DesktopNav = () => {
 
       <ul className="hidden lg:flex lg:items-center gap-16 ">
         {routes.map((route) => {
-          const { href, title } = route;
+          const { href, title, id } = route;
           return (
-            <li>
+            <li key={id}>
               <a
                 href={href}
                 className="flex items-center text-black gap-5 hover:text-neutral-400 transition-all"
