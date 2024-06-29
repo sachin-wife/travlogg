@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.swiper {
+  padding: 16px !important;
+  display: none !important;
+}
+
+@media screen and (min-width: 1230px) {
+  .swiper {
+    display: block !important;
+  }
+}
+
+.radial-gradient {
+  background: radial-gradient(
+    farthest-corner at 41px 40px,
+    #ffbda9 0%,
+    #ffe8e0 100%
+  );
+}
